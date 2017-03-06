@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{{ stylesheeturl }}}">
+    {{#if home}}
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <script>
+        $(function(){
+           $(".typed").typed({
+              strings: ["print('Hello world!')", "Learn to code!"],
+              typeSpeed: 70,
+              backSpeed: 60,
+              backDelay: 1500,
+              loop: true
+           });
+        }); 
+        </script>
+    {{/if }}
+    <meta charset="UTF-8" />
+    <meta name="pinterest" content="nopin" />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+</head>
+<body>
+{{#unless home}}
+<div class="main-container">
+    <header>
+        <a href="/"><img src="{{{ logourl }}}" class="mini-logo"/></a>
+    </header>
+{{/unless}}
