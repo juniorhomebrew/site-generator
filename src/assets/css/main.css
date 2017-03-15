@@ -30,6 +30,7 @@ body {
     width: 95vw;
     margin: auto;
     text-align: left;
+    box-sizing: border-box;
 }
 
 #logo {
@@ -128,7 +129,6 @@ a {
 }
 
 .mini-logo {
-    margin-right: 1em;
     width: 1em;
     float: right;
 }

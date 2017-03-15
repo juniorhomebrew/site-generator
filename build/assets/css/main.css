@@ -30,6 +30,7 @@ body {
     width: 95vw;
     margin: auto;
     text-align: left;
+    box-sizing: border-box;
 }
 
 #logo {
@@ -70,6 +71,7 @@ pre {
     background: rgba(0, 0, 0, 0.4);
     padding: 1em;
     border-radius: 0.2em;
+    overflow-x: scroll;
 }
 
 code {
